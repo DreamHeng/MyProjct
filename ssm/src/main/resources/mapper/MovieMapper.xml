@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kaishengit.mapper.MovieMapper">
+
+    <!--select-->
+    <select id="findById" resultType="Movie">
+        SELECT * FROM movie WHERE id = #{id}
+    </select>
+    <select id="findAll" resultType="com.kaishengit.entity.Movie">
+        SELECT * FROM movie ORDER by id desc
+    </select>
+
+
+    <!--insert-->
+    <insert id="save">
+        INSERT INTO movie (title,daoyan,sendtime,releaseyear,rate)
+        VALUES(#{title},#{daoyan},#{sendtime},#{releaseyear},#{rate})
+    </insert>
+
+    <!--delete-->
+    <delete id="delById">
+        DELETE  FROM movie WHERE id = #{id}
+    </delete>
+
+    <!--update-->
+    <update id="update">
+        UPDATE movie
+        SET title = #{title}, daoyan = #{daoyan}, sendtime = #{sendtime}, releaseyear = #{releaseyear}, rate = #{rate}
+        WHERE id = #{id};
+    </update>
+
+
+</mapper>
