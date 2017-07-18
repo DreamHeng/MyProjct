@@ -13,6 +13,7 @@
     <artifactId>crm_mapper</artifactId>
     <packaging>jar</packaging>
 
+
     <dependencies>
         <dependency>
             <groupId>com.kaishengit</groupId>
@@ -50,10 +51,6 @@
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.kaishengit</groupId>
-            <artifactId>crm_entity</artifactId>
         </dependency>
     </dependencies>
 

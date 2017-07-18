@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../crm_common/crm_common.iml" filepath="$PROJECT_DIR$/../crm_common/crm_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../crm_entity/crm_entity.iml" filepath="$PROJECT_DIR$/../crm_entity/crm_entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../crm_mapper/crm_mapper.iml" filepath="$PROJECT_DIR$/../crm_mapper/crm_mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../crm_service/crm_service.iml" filepath="$PROJECT_DIR$/../crm_service/crm_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../crm_service_impl/crm_service_impl.iml" filepath="$PROJECT_DIR$/../crm_service_impl/crm_service_impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../crm_web/crm_web.iml" filepath="$PROJECT_DIR$/../crm_web/crm_web.iml" />
+      <module fileurl="file://E:\workspace\git\java23\crm\crm_webapp\crm_webapp.iml" filepath="E:\workspace\git\java23\crm\crm_webapp\crm_webapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent.iml" filepath="$PROJECT_DIR$/parent.iml" />
+    </modules>
+  </component>
+</project>
