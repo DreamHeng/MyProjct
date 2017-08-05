@@ -22,4 +22,5 @@ public interface MovieService {
 
     void update(Movie movie);
 
+    PageInfo<Movie> PageByPageNo(Integer pageNo);
 }

@@ -1,6 +1,0 @@
-com\kaishengit\crm\controller\HomeController.class
-com\kaishengit\crm\controller\AccountController.class
-com\kaishengit\crm\controller\LoginController.class
-com\kaishengit\crm\controller\AccountController$1.class
-com\kaishengit\crm\controller\interceptor\LoginInterceptor.class
-com\kaishengit\crm\controller\CustomerController.class

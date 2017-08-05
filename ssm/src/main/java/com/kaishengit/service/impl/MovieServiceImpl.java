@@ -49,5 +49,12 @@ public class MovieServiceImpl implements MovieService {
         movieMapper.update(movie);
     }
 
+    @Override
+    public PageInfo<Movie> PageByPageNo(Integer pageNo) {
+        PageHelper.startPage(pageNo, 10);
+        List<Movie> movieList = movieMapper.findAll();
+        return new PageInfo<>(movieList);
+    }
+
 
 }

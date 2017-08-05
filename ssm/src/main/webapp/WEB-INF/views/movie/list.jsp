@@ -48,7 +48,7 @@
                 </tr>
             </thead>
             <tbody>
-                <c:forEach items="${movieList}" var="movie">
+                <c:forEach items="${page.list}" var="movie">
                     <tr>
                         <td>${movie.title}</td>
                         <td>${movie.daoyan}</td>
@@ -63,12 +63,14 @@
                 </c:forEach>
             </tbody>
         </table>
+        <ul id="pagination-demo" class="pagination-sm"></ul>
     </div>
 
-    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/jquery.js"></script>
     <script src="/static/layer/layer.js"></script>
+    <script src="/static/js/jquery.twbsPagination.min.js"></script>
     <script>
-        $(function(){
+        $(function () {
             //分页
             $('#pagination-demo').twbsPagination({
                 totalPages: ${page.pages},
@@ -79,6 +81,7 @@
                 next:'下一页',
                 href:"?title=${title}&daoyan=${daoyan}&min=${min}&max=${max}&p={{number}}"
             });
+
 
             $(".del").click(function () {
                 var id = $(this).attr("rel");

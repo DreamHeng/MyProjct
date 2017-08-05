@@ -19,8 +19,10 @@ public class MovieController {
     private MovieService movieService;
 
     @GetMapping
-    public String list(Model model) {
-        model.addAttribute("movieList",movieService.findAll());
+    public String list(@RequestParam(required = false, defaultValue = "1", name = "p") Integer pageNo,Model model) {
+       PageInfo<Movie> pageInfo = movieService.PageByPageNo(pageNo);
+       model.addAttribute("page", pageInfo);
+        // / model.addAttribute("movieList",movieService.findAll());
         return "movie/list";
     }
 

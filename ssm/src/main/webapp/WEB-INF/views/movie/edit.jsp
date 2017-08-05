@@ -28,7 +28,8 @@
                 <label>评分</label>
                 <input type="text" class="form-control" name="rate" value="${movie.rate}">
             </div>
-            <button class="btn btn-primary">确认修改</button>
+            <input type="reset" value="重置">
+            <input type="submit" value="提交">
 
         </form>
     </div>
